@@ -1,0 +1,9 @@
+.navigation {
+	width: 100%;
+	position: absolute;
+	background: rgba(255,255,255,0.75);
+	border-bottom: 1px solid black;
+	@include clearfix;
+	@include opacity(0.75);
+	height: 100px
+}
