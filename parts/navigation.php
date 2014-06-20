@@ -8,17 +8,17 @@
 		<div class="logo_add_rap">
 			<p class="logo_add_text">Eating and Weight</p>
 			<p class="logo_add_text">Management Program</p>
-			<p class="logo_add_text">For Emotional Eaters<spam class="logo_tm">tm</span></p>
+			<p class="logo_add_text">For Emotional Eaters</p>
 		</div> <!-- logo add rap -->
 	</div> <!-- nar_left -->
 	<div class="nav_right">
 		<span class="nav-btn"></span>
 		<ul class="nav">
-			<li href="#intro">intro</li>
-			<li href="#perspective">perspective</li>
-			<li href="#program">the program</li>
-			<li href="#about">about</li>
-			<li href="#contact">contact</li>
+			<li><a href="#intro">intro</a></li>
+			<li><a href="#perspective">perspective</a></li>
+			<li><a href="#program">the program</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a class="last_child" href="#contact">contact</a></li>
 		</ul>
 	</div> <!-- nav_right -->
 </nav> <!-- navigation -->

@@ -1,9 +1,93 @@
 .navigation {
 	width: 100%;
-	position: absolute;
-	background: rgba(255,255,255,0.75);
+	position: fixed;
+	top: 0;
+	background-color: rgba(255,255,255,0.75);
 	border-bottom: 1px solid black;
 	@include clearfix;
-	@include opacity(0.75);
-	height: 100px
-}
+	height: 80px;
+
+	.nav_left {
+		float: left;
+		@include clearfix;
+		width: 500px;
+		margin: 0 0 0 4%;
+
+		a {
+			float: left;
+			text-decoration: none;
+			color: black;
+			height: 100px;
+			display: inline-block;
+			padding-top: 10px;
+
+			.logo_blue {
+				color: $blue;
+			} // logo blue
+
+			.logo_text {
+				font-family: $head-font;
+				@include font-size(20);
+				@include line-height(16);
+			} // logo text
+		} // a
+
+		.logo_line {
+			float: left;
+			height: 60px;
+			width: 6px;
+			background-color: $blue;
+			margin: 10px;
+			display: inline-block;
+		} // logo line
+
+		.logo_add_rap {
+			float: left;
+			height: 100px;
+			display: inline-block;
+			padding-top: 12px;
+
+			.logo_add_text {
+				color: #555;
+				font-family: $head-font;
+				@include font-size(10);
+				@include line-height(10);
+				letter-spacing: 0.05em;
+			} // logo add text
+
+			.logo_tm {
+				font-family: $head-font;
+				@include font-size(4);
+				vertical-align: super;
+			} // logo tm
+		} // logo add rap
+	} // nav left
+
+	.nav_right {
+		float: right;
+
+		ul {
+			display: block;
+			@include clearfix;
+			margin-top: 50px;
+
+			li {
+				display: inline-block;
+
+				a {
+					text-decoration: none;
+					color: #333;
+					font-family: $head-font;
+					float: left;
+					padding: 0 15px;
+					border-right: 1px solid #333;
+					@include font-size(10);
+				} // a
+
+				.last_child {
+					border-right: none;
+				} // last child
+			} // li
+		} // ul
+	} // nav right
+} // navigation

@@ -65,14 +65,20 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('fonts/bebasneue.eot');
+  src: url('fonts/bebasneue.eot?#iefix') format('embedded-opentype'), url('fonts/bebasneue.woff') format('woff'), url('fonts/bebasneue.ttf') format('truetype'), url('fonts/bebasneue.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 .navigation {
   width: 100%;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid black;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-  height: 100px; }
+  height: 80px; }
   .navigation {
     *zoom: 1; }
   .navigation:before, .navigation:after {
@@ -80,3 +86,87 @@ table {
     display: table; }
   .navigation:after {
     clear: both; }
+  .navigation .nav_left {
+    float: left;
+    width: 500px;
+    margin: 0 0 0 4%; }
+    .navigation .nav_left {
+      *zoom: 1; }
+    .navigation .nav_left:before, .navigation .nav_left:after {
+      content: "";
+      display: table; }
+    .navigation .nav_left:after {
+      clear: both; }
+    .navigation .nav_left a {
+      float: left;
+      text-decoration: none;
+      color: black;
+      height: 100px;
+      display: inline-block;
+      padding-top: 10px; }
+      .navigation .nav_left a .logo_blue {
+        color: #0053a5; }
+      .navigation .nav_left a .logo_text {
+        font-family: bebas_neueregular, sans-serif;
+        font-size: 20px;
+        font-size: 2.5rem;
+        line-height: 16px;
+        line-height: 2rem; }
+    .navigation .nav_left .logo_line {
+      float: left;
+      height: 60px;
+      width: 6px;
+      background-color: #0053a5;
+      margin: 10px;
+      display: inline-block; }
+    .navigation .nav_left .logo_add_rap {
+      float: left;
+      height: 100px;
+      display: inline-block;
+      padding-top: 12px; }
+      .navigation .nav_left .logo_add_rap .logo_add_text {
+        color: #555;
+        font-family: bebas_neueregular, sans-serif;
+        font-size: 10px;
+        font-size: 1.25rem;
+        line-height: 10px;
+        line-height: 1.25rem;
+        letter-spacing: 0.05em; }
+      .navigation .nav_left .logo_add_rap .logo_tm {
+        font-family: bebas_neueregular, sans-serif;
+        font-size: 4px;
+        font-size: 0.5rem;
+        vertical-align: super; }
+  .navigation .nav_right {
+    float: right; }
+    .navigation .nav_right ul {
+      display: block;
+      margin-top: 50px; }
+      .navigation .nav_right ul {
+        *zoom: 1; }
+      .navigation .nav_right ul:before, .navigation .nav_right ul:after {
+        content: "";
+        display: table; }
+      .navigation .nav_right ul:after {
+        clear: both; }
+      .navigation .nav_right ul li {
+        display: inline-block; }
+        .navigation .nav_right ul li a {
+          text-decoration: none;
+          color: #333;
+          font-family: bebas_neueregular, sans-serif;
+          float: left;
+          padding: 0 15px;
+          border-right: 1px solid #333;
+          font-size: 10px;
+          font-size: 1.25rem; }
+        .navigation .nav_right ul li .last_child {
+          border-right: none; }
+
+.hero {
+  width: 100%;
+  height: 160px;
+  border-bottom: 1px solid black;
+  background-image: url(gfx/hero_hill.jpg);
+  background-size: cover;
+  background-position: center; }
