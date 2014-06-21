@@ -13,9 +13,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */ }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -58,6 +61,10 @@ table {
   ========================================================================== */
 /* Text replacement (instead of text-indent)
   ========================================================================== */
+.container {
+  max-width: 1050px;
+  margin: 0 auto; }
+
 @font-face {
   font-family: 'bebasregular';
   src: url('fonts/bebas___-webfont.eot');
@@ -89,7 +96,7 @@ table {
   .navigation .nav_left {
     float: left;
     width: 500px;
-    margin: 0 0 0 4%; }
+    margin: 0 0 0 2%; }
     .navigation .nav_left {
       *zoom: 1; }
     .navigation .nav_left:before, .navigation .nav_left:after {
@@ -108,10 +115,10 @@ table {
         color: #0053a5; }
       .navigation .nav_left a .logo_text {
         font-family: bebas_neueregular, sans-serif;
-        font-size: 20px;
-        font-size: 2.5rem;
-        line-height: 16px;
-        line-height: 2rem; }
+        font-size: 40px;
+        font-size: 4rem;
+        line-height: 32px;
+        line-height: 3.2rem; }
     .navigation .nav_left .logo_line {
       float: left;
       height: 60px;
@@ -123,19 +130,19 @@ table {
       float: left;
       height: 100px;
       display: inline-block;
-      padding-top: 12px; }
+      padding-top: 10px; }
       .navigation .nav_left .logo_add_rap .logo_add_text {
         color: #555;
         font-family: bebas_neueregular, sans-serif;
-        font-size: 10px;
-        font-size: 1.25rem;
-        line-height: 10px;
-        line-height: 1.25rem;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 21px;
+        line-height: 2.1rem;
         letter-spacing: 0.05em; }
       .navigation .nav_left .logo_add_rap .logo_tm {
         font-family: bebas_neueregular, sans-serif;
         font-size: 4px;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         vertical-align: super; }
   .navigation .nav_right {
     float: right; }
@@ -158,8 +165,8 @@ table {
           float: left;
           padding: 0 15px;
           border-right: 1px solid #333;
-          font-size: 10px;
-          font-size: 1.25rem; }
+          font-size: 20px;
+          font-size: 2rem; }
         .navigation .nav_right ul li .last_child {
           border-right: none; }
 
@@ -167,6 +174,309 @@ table {
   width: 100%;
   height: 160px;
   border-bottom: 1px solid black;
-  background-image: url(gfx/hero_hill.jpg);
+  background-image: url(gfx/land_4.jpg);
   background-size: cover;
   background-position: center; }
+
+.intro_rap {
+  width: 100%;
+  overflow: hidden;
+  background: url(gfx/subtle_dots.png) repeat; }
+  .intro_rap .intro_header {
+    width: 100%;
+    padding: 4% 0 2%;
+    overflow: hidden; }
+    .intro_rap .intro_header {
+      *zoom: 1; }
+    .intro_rap .intro_header:before, .intro_rap .intro_header:after {
+      content: "";
+      display: table; }
+    .intro_rap .intro_header:after {
+      clear: both; }
+    .intro_rap .intro_header h2 {
+      width: 100%;
+      text-align: center;
+      font-family: 'Droid Sans', sans-serif;
+      color: #111;
+      font-size: 23px;
+      font-size: 2.3rem;
+      line-height: 20px;
+      line-height: 2rem; }
+    .intro_rap .intro_header h1 {
+      width: 100%;
+      text-align: center;
+      font-family: bebas_neueregular, sans-serif;
+      color: #0053a5;
+      font-size: 60px;
+      font-size: 6rem;
+      line-height: 70px;
+      line-height: 7rem; }
+    .intro_rap .intro_header h3 {
+      width: 100%;
+      text-align: center;
+      font-family: 'Droid Sans', sans-serif;
+      color: #888;
+      font-size: 30px;
+      font-size: 3rem;
+      line-height: 20px;
+      line-height: 2rem; }
+  .intro_rap .intro_side {
+    width: 25%;
+    float: left;
+    padding: 5% 2.5%;
+    overflow: hidden; }
+    .intro_rap .intro_side .intro_question {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 20px;
+      line-height: 2rem;
+      color: #777;
+      padding: 0 0 2%; }
+    .intro_rap .intro_side .intro_answer {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 20px;
+      line-height: 2rem;
+      color: #777;
+      padding: 0 0 5%;
+      color: #0053a5; }
+  .intro_rap .intro_main {
+    width: 65%;
+    float: left;
+    padding: 2% 2.5%;
+    overflow: hidden; }
+    .intro_rap .intro_main h4 {
+      font-family: bebas_neueregular, sans-serif;
+      color: #111;
+      padding: 0 0 3% 5%;
+      font-size: 40px;
+      font-size: 4rem; }
+    .intro_rap .intro_main p {
+      font-family: 'Droid Serif', serif;
+      text-indent: 5%;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 26px;
+      line-height: 2.6rem;
+      color: #222;
+      padding: 0 0 2%; }
+
+.per_header {
+  width: 100%;
+  height: 125px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  background-image: url(gfx/land_5.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.per_rap {
+  width: 100%;
+  overflow: hidden;
+  background: url(gfx/subtle_dots.png) repeat; }
+  .per_rap {
+    *zoom: 1; }
+  .per_rap:before, .per_rap:after {
+    content: "";
+    display: table; }
+  .per_rap:after {
+    clear: both; }
+  .per_rap .per_left {
+    width: 65%;
+    padding: 2% 2.5%;
+    float: left; }
+    .per_rap .per_left h4 {
+      font-family: bebas_neueregular, sans-serif;
+      color: #111;
+      padding: 0 0 3% 5%;
+      font-size: 40px;
+      font-size: 4rem; }
+    .per_rap .per_left p {
+      font-family: 'Droid Serif', serif;
+      text-indent: 5%;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 28px;
+      line-height: 2.8rem;
+      color: #222;
+      padding: 0 0 2%; }
+    .per_rap .per_left h5 {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 16px;
+      line-height: 1.6rem;
+      color: #888; }
+  .per_rap .per_right {
+    width: 25%;
+    padding: 10% 2.5%;
+    float: left; }
+    .per_rap .per_right p {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 24px;
+      line-height: 2.4rem;
+      color: #777;
+      padding: 0 0 5%;
+      color: #0053a5;
+      text-transform: uppercase; }
+
+.program_header {
+  width: 100%;
+  height: 125px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  background-image: url(gfx/land_3.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.program_rap {
+  width: 100%;
+  overflow: hidden;
+  background: url(gfx/subtle_dots.png) repeat; }
+  .program_rap {
+    *zoom: 1; }
+  .program_rap:before, .program_rap:after {
+    content: "";
+    display: table; }
+  .program_rap:after {
+    clear: both; }
+  .program_rap .program_left {
+    width: 25%;
+    padding: 10% 2.5%;
+    float: left; }
+    .program_rap .program_left p {
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 24px;
+      line-height: 2.4rem;
+      color: #777;
+      padding: 0 0 5%;
+      color: #0053a5;
+      text-transform: uppercase;
+      font-weight: 700; }
+  .program_rap .program_right {
+    width: 65%;
+    padding: 2% 2.5%;
+    float: left; }
+    .program_rap .program_right h4 {
+      font-family: bebas_neueregular, sans-serif;
+      color: #111;
+      padding: 0 0 3% 5%;
+      font-size: 40px;
+      font-size: 4rem; }
+    .program_rap .program_right p {
+      font-family: 'Droid Serif', serif;
+      text-indent: 5%;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 28px;
+      line-height: 2.8rem;
+      color: #222;
+      padding: 0 0 2%; }
+
+.about_header {
+  width: 100%;
+  height: 125px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  background-image: url(gfx/land_2.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.about_rap {
+  width: 100%;
+  overflow: hidden;
+  background: url(gfx/subtle_dots.png) repeat; }
+  .about_rap {
+    *zoom: 1; }
+  .about_rap:before, .about_rap:after {
+    content: "";
+    display: table; }
+  .about_rap:after {
+    clear: both; }
+  .about_rap .about_left {
+    width: 65%;
+    padding: 2% 2.5%;
+    float: left; }
+    .about_rap .about_left h4 {
+      font-family: bebas_neueregular, sans-serif;
+      color: #111;
+      padding: 0 0 3% 5%;
+      font-size: 40px;
+      font-size: 4rem; }
+    .about_rap .about_left p {
+      font-family: 'Droid Serif', serif;
+      text-indent: 5%;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 28px;
+      line-height: 2.8rem;
+      color: #222;
+      padding: 0 0 2%; }
+  .about_rap .about_right {
+    width: 27.5%;
+    padding: 10% 2.5% 0 0;
+    float: left; }
+    .about_rap .about_right p {
+      font-size: 15px;
+      font-size: 1.5rem;
+      margin: 5px 0;
+      font-family: 'Droid Sans', sans-serif;
+      font-weight: 700;
+      color: #0053a5; }
+    .about_rap .about_right img {
+      width: 100%;
+      margin: -2px 0 0 0;
+      padding: 0; }
+
+.contact_header {
+  width: 100%;
+  height: 125px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  background-image: url(gfx/land_1.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.contact_rap {
+  width: 100%;
+  overflow: hidden;
+  background: url(gfx/subtle_dots.png) repeat;
+  margin-bottom: 300px; }
+  .contact_rap {
+    *zoom: 1; }
+  .contact_rap:before, .contact_rap:after {
+    content: "";
+    display: table; }
+  .contact_rap:after {
+    clear: both; }
+  .contact_rap .contact_left {
+    width: 46%;
+    margin: 2%;
+    float: left;
+    overflow: hidden; }
+    .contact_rap .contact_left h4 {
+      font-family: bebas_neueregular, sans-serif;
+      color: #111;
+      padding: 0 0 3% 5%;
+      font-size: 40px;
+      font-size: 4rem; }
+    .contact_rap .contact_left p {
+      font-family: 'Droid Serif', serif;
+      text-indent: 5%;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 28px;
+      line-height: 2.8rem;
+      color: #222;
+      padding: 0 0 2%; }
+  .contact_rap .contact_right {
+    width: 46%;
+    margin: 2%;
+    float: left;
+    overflow: hidden; }

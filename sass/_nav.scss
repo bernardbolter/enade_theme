@@ -11,7 +11,7 @@
 		float: left;
 		@include clearfix;
 		width: 500px;
-		margin: 0 0 0 4%;
+		margin: 0 0 0 2%;
 
 		a {
 			float: left;
@@ -26,9 +26,9 @@
 			} // logo blue
 
 			.logo_text {
-				font-family: $head-font;
-				@include font-size(20);
-				@include line-height(16);
+				font-family: $font-head;
+				@include font-size(4);
+				@include line-height(3.2);
 			} // logo text
 		} // a
 
@@ -45,19 +45,19 @@
 			float: left;
 			height: 100px;
 			display: inline-block;
-			padding-top: 12px;
+			padding-top: 10px;
 
 			.logo_add_text {
 				color: #555;
-				font-family: $head-font;
-				@include font-size(10);
-				@include line-height(10);
+				font-family: $font-head;
+				@include font-size(2);
+				@include line-height(2.1);
 				letter-spacing: 0.05em;
 			} // logo add text
 
 			.logo_tm {
-				font-family: $head-font;
-				@include font-size(4);
+				font-family: $font-head;
+				@include font-size(0.4);
 				vertical-align: super;
 			} // logo tm
 		} // logo add rap
@@ -77,11 +77,11 @@
 				a {
 					text-decoration: none;
 					color: #333;
-					font-family: $head-font;
+					font-family: $font-head;
 					float: left;
 					padding: 0 15px;
 					border-right: 1px solid #333;
-					@include font-size(10);
+					@include font-size(2);
 				} // a
 
 				.last_child {

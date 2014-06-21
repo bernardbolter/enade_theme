@@ -76,17 +76,17 @@
 /* Font Size
   ========================================================================== */
 
-@mixin font-size($sizeValue: 12 ){
-  font-size: $sizeValue + px; //fallback for old browsers
-  font-size: (0.125 * $sizeValue) + rem;
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
 }
 
 /* Line Height
   ========================================================================== */
 
-@mixin line-height($heightValue: 12 ){
-  line-height: $heightValue + px; //fallback for old browsers
-  line-height: (0.125 * $heightValue) + rem;
+@mixin line-height($heightValue: 1.6 ){
+  line-height: ($heightValue * 10) + px; //fallback for old browsers
+  line-height: $heightValue + rem;
 }
 
 /* Cross browser inline block

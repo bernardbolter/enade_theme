@@ -9,9 +9,9 @@ Template Name: Home
 <?php get_template_part( 'parts/navigation' ); ?>
 
 <?php get_template_part( 'parts/intro' ); ?>
-<?php get_template_part( 'parts/intro_q_a' ); ?>
 
 <?php get_template_part( 'parts/perspective'); ?>
+
 <?php get_template_part( 'parts/program'); ?>
 
 <?php get_template_part( 'parts/about'); ?>
