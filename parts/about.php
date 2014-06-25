@@ -10,6 +10,7 @@
 		</div> <!-- about left -->
 		<div class="about_right">
 			<p>Kay Bolter Ph.D.</p>
+			<div class="about_line"></div>
 			<img src="<?php bloginfo( 'template_url' ); ?>/gfx/kay_photo.jpg" />
 			<img src="<?php bloginfo( 'template_url' ); ?>/gfx/about_shadow_points.png" />
 		</div> <!-- about right -->

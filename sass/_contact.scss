@@ -29,19 +29,86 @@
 		} // h4
 
 		p {
-			font-family: $font-serif;
+			font-family: $font-sans;
 			text-indent: 5%;
-			@include font-size(1.8);
-			@include line-height(2.8);
-			color: #222;
+			@include font-size(1.6);
+			@include line-height(2.1);
+			color: #555;
 			padding: 0 0 2%;
+		} // p
+
+		.contact_div {
+			width: 100%;
+			height: 1px;
+			background: $blue;
+			margin: 3% 0 5%;
+			display: block;
+		} // contact div
+
+		h1 {
+			@include font-size(2.4);
+			text-align: right;
+			font-family: $font-sans;
+			color: #222;
+			width: 94%;
+			margin: 0 3% 5%;
+		} // h1
+
+		h2 {
+			@include font-size(1.6);
+			text-align: right;
+			width: 94%;
+			margin: 4px 3%;
+			font-family: $font-sans;
+			color: #777;
+		} // h2
+
+		h3 {
+			@include font-size(1.8);
+			text-align: right;
+			width: 94%;
+			margin: 4px 3%;
+			font-family: $font-sans;
+			color: #444;
 		}
 	} // contact left
 
 	.contact_right {
 		width: 46%;
-		margin: 2%;
+		margin: 5% 2% 2%;
 		float: left;
 		overflow: hidden;
+
+		p {
+			@include font-size(1.5);
+			font-family: $font-sans;
+			@include line-height(1.8);
+			color: #555;
+		} // p
 	} // contact right
 } // contact rap
+
+///////////// CONTACT FORM
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: #fff;
+    color: #000;
+    width: 97%;
+    @include font-size(1.7);
+    font-family: $blue;
+
+    &:focus {
+    	border: 1px solid $blue;
+    	outline: $blue;
+    	background: #efefef;
+    }
+}
+
+.wpcf7-response-output {
+	@include font-size(1.5);
+	background: #eee;
+}
+

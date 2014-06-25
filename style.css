@@ -95,7 +95,7 @@ table {
     clear: both; }
   .navigation .nav_left {
     float: left;
-    width: 500px;
+    width: 320px;
     margin: 0 0 0 2%; }
     .navigation .nav_left {
       *zoom: 1; }
@@ -163,10 +163,13 @@ table {
           color: #333;
           font-family: bebas_neueregular, sans-serif;
           float: left;
-          padding: 0 15px;
+          padding: 5px 15px;
           border-right: 1px solid #333;
           font-size: 20px;
           font-size: 2rem; }
+        .navigation .nav_right ul li:hover {
+          background: #fff;
+          text-decoration: underline; }
         .navigation .nav_right ul li .last_child {
           border-right: none; }
 
@@ -174,7 +177,7 @@ table {
   width: 100%;
   height: 160px;
   border-bottom: 1px solid black;
-  background-image: url(gfx/land_4.jpg);
+  background-image: url(gfx/land_10.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -322,7 +325,8 @@ table {
       color: #777;
       padding: 0 0 5%;
       color: #0053a5;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 700; }
 
 .program_header {
   width: 100%;
@@ -354,7 +358,6 @@ table {
       font-size: 2rem;
       line-height: 24px;
       line-height: 2.4rem;
-      color: #777;
       padding: 0 0 5%;
       color: #0053a5;
       text-transform: uppercase;
@@ -378,6 +381,10 @@ table {
       line-height: 2.8rem;
       color: #222;
       padding: 0 0 2%; }
+    .program_rap .program_right .program_quote {
+      font-family: 'Droid Serif', serif;
+      font-style: italic;
+      color: #777; }
 
 .about_header {
   width: 100%;
@@ -423,12 +430,17 @@ table {
     padding: 10% 2.5% 0 0;
     float: left; }
     .about_rap .about_right p {
-      font-size: 15px;
-      font-size: 1.5rem;
+      font-size: 18px;
+      font-size: 1.8rem;
       margin: 5px 0;
       font-family: 'Droid Sans', sans-serif;
       font-weight: 700;
-      color: #0053a5; }
+      color: #333; }
+    .about_rap .about_right .about_line {
+      width: 100%;
+      height: 1px;
+      background: #0053a5;
+      margin: 10px 0 20px; }
     .about_rap .about_right img {
       width: 100%;
       margin: -2px 0 0 0;
@@ -467,16 +479,70 @@ table {
       font-size: 40px;
       font-size: 4rem; }
     .contact_rap .contact_left p {
-      font-family: 'Droid Serif', serif;
+      font-family: 'Droid Sans', sans-serif;
       text-indent: 5%;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 21px;
+      line-height: 2.1rem;
+      color: #555;
+      padding: 0 0 2%; }
+    .contact_rap .contact_left .contact_div {
+      width: 100%;
+      height: 1px;
+      background: #0053a5;
+      margin: 3% 0 5%;
+      display: block; }
+    .contact_rap .contact_left h1 {
+      font-size: 24px;
+      font-size: 2.4rem;
+      text-align: right;
+      font-family: 'Droid Sans', sans-serif;
+      color: #222;
+      width: 94%;
+      margin: 0 3% 5%; }
+    .contact_rap .contact_left h2 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      text-align: right;
+      width: 94%;
+      margin: 4px 3%;
+      font-family: 'Droid Sans', sans-serif;
+      color: #777; }
+    .contact_rap .contact_left h3 {
       font-size: 18px;
       font-size: 1.8rem;
-      line-height: 28px;
-      line-height: 2.8rem;
-      color: #222;
-      padding: 0 0 2%; }
+      text-align: right;
+      width: 94%;
+      margin: 4px 3%;
+      font-family: 'Droid Sans', sans-serif;
+      color: #444; }
   .contact_rap .contact_right {
     width: 46%;
-    margin: 2%;
+    margin: 5% 2% 2%;
     float: left;
     overflow: hidden; }
+    .contact_rap .contact_right p {
+      font-size: 15px;
+      font-size: 1.5rem;
+      font-family: 'Droid Sans', sans-serif;
+      line-height: 18px;
+      line-height: 1.8rem;
+      color: #555; }
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+  background-color: #fff;
+  color: #000;
+  width: 97%;
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-family: #0053a5; }
+  .wpcf7 input[type="text"]:focus, .wpcf7 input[type="email"]:focus, .wpcf7 textarea:focus {
+    border: 1px solid #0053a5;
+    outline: #0053a5;
+    background: #efefef; }
+
+.wpcf7-response-output {
+  font-size: 15px;
+  font-size: 1.5rem;
+  background: #eee; }

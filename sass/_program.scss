@@ -23,12 +23,11 @@
 			font-family: $font-sans;
 			@include font-size(2);
 			@include line-height(2.4);
-			color: #777;
 			padding: 0 0 5%;
 			color: $blue;
 			text-transform: uppercase;
 			font-weight: 700;
-			} // p
+		} // p
 	} // program left
 
 	.program_right {
@@ -51,5 +50,11 @@
 			color: #222;
 			padding: 0 0 2%;
 		} // p
+
+		.program_quote {
+				font-family: $font-serif;
+				font-style: italic;
+				color: #777;
+		} // program quote
 	} // program right
 } // program rap

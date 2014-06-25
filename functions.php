@@ -87,6 +87,9 @@ add_action( 'widgets_init', 'eande_theme_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+add_filter('show_admin_bar', '__return_false');
+
 function eande_theme_scripts() {
 	wp_enqueue_style( 'eande_theme-style', get_stylesheet_uri() );
 
