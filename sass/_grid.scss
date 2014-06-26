@@ -2,3 +2,15 @@
 	max-width: 1050px;
 	margin: 0 auto;
 }
+
+$tab: 849px;
+$mob: 649px;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == tab {
+    @media only screen and (max-width: $tab) { @content; }
+  }
+}

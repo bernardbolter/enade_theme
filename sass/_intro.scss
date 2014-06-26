@@ -23,8 +23,14 @@
 			text-align: center;
 			font-family: $font-sans;
 			color: #111;
-			@include font-size(2.3);
-			@include line-height(2);
+			@include font-size(2.1);
+			@include line-height(2.3);
+			margin: 0 0 10px 0;
+
+			@include respond-to(tab) {
+				@include font-size(1.8);
+				@include line-height(2);
+			}
 		} // h2
 
 		h1 {
@@ -33,7 +39,12 @@
 			font-family: $font-head;
 			color: $blue;
 			@include font-size(6);
-			@include line-height(7);
+			@include line-height(6.2);
+
+			@include respond-to(tab) {
+				@include font-size(4);
+				@include line-height(4.4);
+			}
 		} // h1
 
 		h3 {
@@ -42,7 +53,12 @@
 			font-family: $font-sans;
 			color: #888;
 			@include font-size(3);
-			@include line-height(2);
+			@include line-height(3.4);
+
+			@include respond-to(tab) {
+				@include font-size(2.4);
+				@include line-height(2.8);
+			}
 		} // h3
 	} // intro header
 
@@ -51,6 +67,10 @@
 		float: left;
 		padding: 5% 2.5%;
 		overflow: hidden;
+
+		@include respond-to(tab) {
+			display: none;
+		}
 
 		.intro_question {
 			font-family: $font-sans;
@@ -76,6 +96,11 @@
 		padding: 2% 2.5%;
 		overflow: hidden;
 
+		@include respond-to(tab) {
+			width: 94%;
+			padding: 2% 3%;
+		}
+
 		h4 {
 			font-family: $font-head;
 			color: #111;
@@ -85,9 +110,8 @@
 
 		p {
 			font-family: $font-serif;
-			text-indent: 5%;
 			@include font-size(2);
-			@include line-height(2.6);
+			@include line-height(2.8);
 			color: #222;
 			padding: 0 0 2%;
 		} // p

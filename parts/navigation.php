@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="nav_left">
 			<a href="#top" class="logo">
-				<p class="logo_text">Eating <span class="logo_blue">&</span></p>
+				<p class="logo_text">Eating<span class="logo_blue">&</span></p>
 				<p class="logo_text">Emotion</p>
 			</a> <!-- logo -->
 			<div class="logo_line"></div>
@@ -13,7 +13,7 @@
 			</div> <!-- logo add rap -->
 		</div> <!-- nar_left -->
 		<div class="nav_right">
-			<span class="nav-btn"></span>
+			<a href="#" id="menu_icon"></a>
 			<ul class="nav" id="navigation-bar">
 				<li><a href="#intro">intro</a></li>
 				<li><a href="#perspective">perspective</a></li>
