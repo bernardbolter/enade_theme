@@ -12,7 +12,7 @@
 	width: 100%;
 	overflow: hidden;
 	background: url(gfx/subtle_dots.png) repeat;
-	margin-bottom: 300px;
+	padding-bottom: 300px;
 	@include clearfix;
 
 	.contact_left {
@@ -20,6 +20,11 @@
 		margin: 2%;
 		float: left;
 		overflow: hidden;
+
+		@include respond-to(tab) {
+			width: 94%;
+			padding: 2% 3%;
+		}
 
 		h4 {
 			font-family: $font-head;
@@ -78,6 +83,11 @@
 		margin: 5% 2% 2%;
 		float: left;
 		overflow: hidden;
+
+		@include respond-to(tab) {
+			width: 94%;
+			padding: 2% 3%;
+		}
 
 		p {
 			@include font-size(1.5);

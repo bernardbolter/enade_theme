@@ -13,11 +13,10 @@
 			</div> <!-- logo add rap -->
 		</div> <!-- nar_left -->
 		<div class="nav_right">
-			<a href="#" id="menu_icon"></a>
 			<ul class="nav" id="navigation-bar">
 				<li><a href="#intro">intro</a></li>
 				<li><a href="#perspective">perspective</a></li>
-				<li><a href="#program">the program</a></li>
+				<li><a href="#program"><span class="the">the </span>program</a></li>
 				<li><a href="#about">about</a></li>
 				<li><a class="last_child" href="#contact">contact</a></li>
 			</ul>

@@ -19,11 +19,74 @@
 		padding: 2% 2.5%;
 		float: left;
 
+		@include respond-to(tab) {
+			width: 94%;
+			padding: 2% 3%;
+		}
+
+		.about_small_photo {
+			display: none;
+
+			@include respond-to(tab) {
+				display: inline-block;
+				float: right;
+				width: 30%;
+				margin: 0 0 10px 20px;
+			}
+
+			@include respond-to(mob) {
+				display: inline-block;
+				float: right;
+				width: 40%;
+				margin: 0 0 10px 20px;
+			}
+
+			p {
+				@include font-size(1.8);
+				margin: 5px 0;
+				font-family: $font-sans;
+				font-weight: 700;
+				color: #333;
+
+				@include respond-to(mob) {
+					@include font-size(1.4);
+					margin: 0;
+				}
+			} // p
+
+			.about_line {
+				width: 100%;
+				height: 1px;
+				background: $blue;
+				margin: 10px 0 20px;
+
+				@include respond-to(mob) {
+					margin: 5px 0 10px;
+				}
+			}
+
+			img {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				display: block;
+			} // img
+		} // about small photo
+
 		h4 {
 			font-family: $font-head;
 			color: #111;
 			padding: 0 0 3% 5%;
 			@include font-size(4);
+
+			@include respond-to(tab) {
+				@include font-size(3.5);
+			}
+			
+			@include respond-to(mob) {
+				@include font-size(3);
+				margin-top: 20px;
+			}
 		} // h4
 
 		p {
@@ -33,6 +96,16 @@
 			@include line-height(2.8);
 			color: #222;
 			padding: 0 0 2%;
+
+			@include respond-to(tab) {
+				@include font-size(1.8);
+				@include line-height(2.6);
+			}
+
+			@include respond-to(mob) {
+				@include font-size(1.6);
+				@include line-height(2.4);
+			}
 		} // p
 	} // about left
 
@@ -40,6 +113,10 @@
 		width: 27.5%;
 		padding: 10% 2.5% 0 0;
 		float: left;
+
+		@include respond-to(tab) {
+			display: none;
+		}
 
 		p {
 			@include font-size(1.8);
@@ -58,8 +135,9 @@
 
 		img {
 			width: 100%;
-			margin: -2px 0 0 0;
+			margin: 0;
 			padding: 0;
+			display: block;
 		}
 	} // about right
 } // about right

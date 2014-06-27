@@ -106,7 +106,15 @@
 			color: #111;
 			padding: 0 0 3% 5%;
 			@include font-size(4);
-		}
+
+			@include respond-to(tab) {
+				@include font-size(3.5);
+			}
+			
+			@include respond-to(mob) {
+				@include font-size(3);
+			}
+		} // h4
 
 		p {
 			font-family: $font-serif;
@@ -114,6 +122,16 @@
 			@include line-height(2.8);
 			color: #222;
 			padding: 0 0 2%;
+			
+			@include respond-to(tab) {
+				@include font-size(1.8);
+				@include line-height(2.6);
+			}
+
+			@include respond-to(mob) {
+				@include font-size(1.6);
+				@include line-height(2.4);
+			}
 		} // p
 	} // intro main
 } // intro rap

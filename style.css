@@ -85,7 +85,8 @@ table {
   top: 0;
   background-color: rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid black;
-  height: 80px; }
+  height: 80px;
+  z-index: 9999; }
   .navigation {
     *zoom: 1; }
   .navigation:before, .navigation:after {
@@ -107,6 +108,9 @@ table {
     @media only screen and (max-width: 849px) {
       .navigation .nav_left {
         width: 150px; } }
+    @media only screen and (max-width: 649px) {
+      .navigation .nav_left {
+        width: 100%; } }
     .navigation .nav_left a {
       float: left;
       text-decoration: none;
@@ -114,6 +118,10 @@ table {
       height: 100px;
       display: inline-block;
       padding-top: 10px; }
+      @media only screen and (max-width: 649px) {
+        .navigation .nav_left a {
+          width: 100%;
+          height: auto; } }
       .navigation .nav_left a .logo_blue {
         color: #0053a5;
         font-family: bebasregular, sans-serif;
@@ -126,6 +134,9 @@ table {
         font-size: 4rem;
         line-height: 32px;
         line-height: 3.2rem; }
+        @media only screen and (max-width: 649px) {
+          .navigation .nav_left a .logo_text {
+            display: inline-block; } }
     .navigation .nav_left .logo_line {
       float: left;
       height: 64px;
@@ -133,6 +144,9 @@ table {
       background-color: #0053a5;
       margin: 10px;
       display: inline-block; }
+      @media only screen and (max-width: 649px) {
+        .navigation .nav_left .logo_line {
+          display: none; } }
     .navigation .nav_left .logo_add_rap {
       float: left;
       height: 100px;
@@ -158,20 +172,7 @@ table {
     float: right; }
     @media only screen and (max-width: 649px) {
       .navigation .nav_right {
-        margin-right: 20px; } }
-    .navigation .nav_right #menu_icon {
-      display: none; }
-      @media only screen and (max-width: 649px) {
-        .navigation .nav_right #menu_icon {
-          background: transparent url(gfx/menu-item.png) no-repeat 40px 25px;
-          width: 80px;
-          margin: 0;
-          padding: 0;
-          display: block;
-          overflow: hidden;
-          height: 81px;
-          float: right;
-          z-index: 10; } }
+        width: 100%; } }
     .navigation .nav_right ul {
       display: block;
       margin-top: 50px; }
@@ -184,12 +185,9 @@ table {
         clear: both; }
       @media only screen and (max-width: 649px) {
         .navigation .nav_right ul {
-          margin-top: 1px; } }
+          margin: 10px 0 0 10px; } }
       .navigation .nav_right ul li {
         display: inline-block; }
-        @media only screen and (max-width: 649px) {
-          .navigation .nav_right ul li {
-            display: block; } }
         .navigation .nav_right ul li a {
           text-decoration: none;
           color: #333;
@@ -201,22 +199,24 @@ table {
           font-size: 2rem; }
           @media only screen and (max-width: 649px) {
             .navigation .nav_right ul li a {
-              width: 100px;
-              padding: 10px 10px 10px 0;
+              padding: 3px 15px 0 0;
               position: relative;
-              border-bottom: 1px solid black;
               margin: 0;
-              position: relative;
               display: block;
               border-right: none;
-              border-left: 1px solid black;
-              text-align: right;
-              background: rgba(255, 255, 255, 0.9); }
+              float: none;
+              text-align: center;
+              font-size: 10px;
+              font-size: 1rem;
+              font-family: 'Droid Sans', sans-serif;
+              text-transform: uppercase;
+              font-weight: 700; }
               .navigation .nav_right ul li a:hover {
-                background: #fff;
                 text-decoration: underline; } }
+          @media only screen and (max-width: 649px) {
+            .navigation .nav_right ul li a .the {
+              display: none; } }
         .navigation .nav_right ul li:hover {
-          background: #fff;
           text-decoration: underline; }
         .navigation .nav_right ul li .last_child {
           border-right: none; }
@@ -330,6 +330,14 @@ table {
       padding: 0 0 3% 5%;
       font-size: 40px;
       font-size: 4rem; }
+      @media only screen and (max-width: 849px) {
+        .intro_rap .intro_main h4 {
+          font-size: 35px;
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 649px) {
+        .intro_rap .intro_main h4 {
+          font-size: 30px;
+          font-size: 3rem; } }
     .intro_rap .intro_main p {
       font-family: 'Droid Serif', serif;
       font-size: 20px;
@@ -338,6 +346,18 @@ table {
       line-height: 2.8rem;
       color: #222;
       padding: 0 0 2%; }
+      @media only screen and (max-width: 849px) {
+        .intro_rap .intro_main p {
+          font-size: 18px;
+          font-size: 1.8rem;
+          line-height: 26px;
+          line-height: 2.6rem; } }
+      @media only screen and (max-width: 649px) {
+        .intro_rap .intro_main p {
+          font-size: 16px;
+          font-size: 1.6rem;
+          line-height: 24px;
+          line-height: 2.4rem; } }
 
 .per_header {
   width: 100%;
@@ -363,12 +383,25 @@ table {
     width: 65%;
     padding: 2% 2.5%;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .per_rap .per_left {
+        width: 94%;
+        padding: 2% 3%; } }
     .per_rap .per_left h4 {
       font-family: bebas_neueregular, sans-serif;
       color: #111;
       padding: 0 0 3% 5%;
       font-size: 40px;
       font-size: 4rem; }
+      @media only screen and (max-width: 849px) {
+        .per_rap .per_left h4 {
+          font-size: 35px;
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 649px) {
+        .per_rap .per_left h4 {
+          font-size: 30px;
+          font-size: 3rem;
+          margin-top: 20px; } }
     .per_rap .per_left p {
       font-family: 'Droid Serif', serif;
       text-indent: 5%;
@@ -378,6 +411,18 @@ table {
       line-height: 2.8rem;
       color: #222;
       padding: 0 0 2%; }
+      @media only screen and (max-width: 849px) {
+        .per_rap .per_left p {
+          font-size: 18px;
+          font-size: 1.8rem;
+          line-height: 26px;
+          line-height: 2.6rem; } }
+      @media only screen and (max-width: 649px) {
+        .per_rap .per_left p {
+          font-size: 16px;
+          font-size: 1.6rem;
+          line-height: 24px;
+          line-height: 2.4rem; } }
     .per_rap .per_left h5 {
       font-family: 'Droid Sans', sans-serif;
       font-size: 14px;
@@ -389,6 +434,9 @@ table {
     width: 25%;
     padding: 10% 2.5%;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .per_rap .per_right {
+        display: none; } }
     .per_rap .per_right p {
       font-family: 'Droid Sans', sans-serif;
       font-size: 20px;
@@ -425,6 +473,9 @@ table {
     width: 25%;
     padding: 10% 2.5%;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .program_rap .program_left {
+        display: none; } }
     .program_rap .program_left p {
       font-family: 'Droid Sans', sans-serif;
       font-size: 20px;
@@ -439,12 +490,25 @@ table {
     width: 65%;
     padding: 2% 2.5%;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .program_rap .program_right {
+        width: 94%;
+        padding: 2% 3%; } }
     .program_rap .program_right h4 {
       font-family: bebas_neueregular, sans-serif;
       color: #111;
       padding: 0 0 3% 5%;
       font-size: 40px;
       font-size: 4rem; }
+      @media only screen and (max-width: 849px) {
+        .program_rap .program_right h4 {
+          font-size: 35px;
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 649px) {
+        .program_rap .program_right h4 {
+          font-size: 30px;
+          font-size: 3rem;
+          margin-top: 20px; } }
     .program_rap .program_right p {
       font-family: 'Droid Serif', serif;
       text-indent: 5%;
@@ -454,6 +518,18 @@ table {
       line-height: 2.8rem;
       color: #222;
       padding: 0 0 2%; }
+      @media only screen and (max-width: 849px) {
+        .program_rap .program_right p {
+          font-size: 18px;
+          font-size: 1.8rem;
+          line-height: 26px;
+          line-height: 2.6rem; } }
+      @media only screen and (max-width: 649px) {
+        .program_rap .program_right p {
+          font-size: 16px;
+          font-size: 1.6rem;
+          line-height: 24px;
+          line-height: 2.4rem; } }
     .program_rap .program_right .program_quote {
       font-family: 'Droid Serif', serif;
       font-style: italic;
@@ -483,12 +559,64 @@ table {
     width: 65%;
     padding: 2% 2.5%;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .about_rap .about_left {
+        width: 94%;
+        padding: 2% 3%; } }
+    .about_rap .about_left .about_small_photo {
+      display: none; }
+      @media only screen and (max-width: 849px) {
+        .about_rap .about_left .about_small_photo {
+          display: inline-block;
+          float: right;
+          width: 30%;
+          margin: 0 0 10px 20px; } }
+      @media only screen and (max-width: 649px) {
+        .about_rap .about_left .about_small_photo {
+          display: inline-block;
+          float: right;
+          width: 40%;
+          margin: 0 0 10px 20px; } }
+      .about_rap .about_left .about_small_photo p {
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin: 5px 0;
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        color: #333; }
+        @media only screen and (max-width: 649px) {
+          .about_rap .about_left .about_small_photo p {
+            font-size: 14px;
+            font-size: 1.4rem;
+            margin: 0; } }
+      .about_rap .about_left .about_small_photo .about_line {
+        width: 100%;
+        height: 1px;
+        background: #0053a5;
+        margin: 10px 0 20px; }
+        @media only screen and (max-width: 649px) {
+          .about_rap .about_left .about_small_photo .about_line {
+            margin: 5px 0 10px; } }
+      .about_rap .about_left .about_small_photo img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block; }
     .about_rap .about_left h4 {
       font-family: bebas_neueregular, sans-serif;
       color: #111;
       padding: 0 0 3% 5%;
       font-size: 40px;
       font-size: 4rem; }
+      @media only screen and (max-width: 849px) {
+        .about_rap .about_left h4 {
+          font-size: 35px;
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 649px) {
+        .about_rap .about_left h4 {
+          font-size: 30px;
+          font-size: 3rem;
+          margin-top: 20px; } }
     .about_rap .about_left p {
       font-family: 'Droid Serif', serif;
       text-indent: 5%;
@@ -498,10 +626,25 @@ table {
       line-height: 2.8rem;
       color: #222;
       padding: 0 0 2%; }
+      @media only screen and (max-width: 849px) {
+        .about_rap .about_left p {
+          font-size: 18px;
+          font-size: 1.8rem;
+          line-height: 26px;
+          line-height: 2.6rem; } }
+      @media only screen and (max-width: 649px) {
+        .about_rap .about_left p {
+          font-size: 16px;
+          font-size: 1.6rem;
+          line-height: 24px;
+          line-height: 2.4rem; } }
   .about_rap .about_right {
     width: 27.5%;
     padding: 10% 2.5% 0 0;
     float: left; }
+    @media only screen and (max-width: 849px) {
+      .about_rap .about_right {
+        display: none; } }
     .about_rap .about_right p {
       font-size: 18px;
       font-size: 1.8rem;
@@ -516,8 +659,9 @@ table {
       margin: 10px 0 20px; }
     .about_rap .about_right img {
       width: 100%;
-      margin: -2px 0 0 0;
-      padding: 0; }
+      margin: 0;
+      padding: 0;
+      display: block; }
 
 .contact_header {
   width: 100%;
@@ -532,7 +676,7 @@ table {
   width: 100%;
   overflow: hidden;
   background: url(gfx/subtle_dots.png) repeat;
-  margin-bottom: 300px; }
+  padding-bottom: 300px; }
   .contact_rap {
     *zoom: 1; }
   .contact_rap:before, .contact_rap:after {
@@ -545,6 +689,10 @@ table {
     margin: 2%;
     float: left;
     overflow: hidden; }
+    @media only screen and (max-width: 849px) {
+      .contact_rap .contact_left {
+        width: 94%;
+        padding: 2% 3%; } }
     .contact_rap .contact_left h4 {
       font-family: bebas_neueregular, sans-serif;
       color: #111;
@@ -595,6 +743,10 @@ table {
     margin: 5% 2% 2%;
     float: left;
     overflow: hidden; }
+    @media only screen and (max-width: 849px) {
+      .contact_rap .contact_right {
+        width: 94%;
+        padding: 2% 3%; } }
     .contact_rap .contact_right p {
       font-size: 15px;
       font-size: 1.5rem;
