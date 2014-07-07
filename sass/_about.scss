@@ -78,6 +78,7 @@
 			color: #111;
 			padding: 0 0 3% 5%;
 			@include font-size(4);
+			margin-top: 20px;
 
 			@include respond-to(tab) {
 				@include font-size(3.5);
@@ -85,7 +86,6 @@
 			
 			@include respond-to(mob) {
 				@include font-size(3);
-				margin-top: 20px;
 			}
 		} // h4
 

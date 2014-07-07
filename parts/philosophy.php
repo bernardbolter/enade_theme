@@ -6,7 +6,7 @@
 			<p>“While weight loss programs tell you what to eat, they do not address the reasons why we eat when we’re not physically hungry.”</p>
 		</div> <!-- program left -->
 		<div class="program_right">
-			<h4>The Program</h4>
+			<h4>Philosophy of the Program</h4>
 			<p>There is a reason why your efforts to maintain your weight loss keep getting sabotaged, and it is not because you are lazy, undisciplined, unmotivated, or genetically predisposed.</p>
 			<p>The reason your weight loss efforts have not been successful is because you probably eat for reasons other than hunger. You could be triggered by emotional, psychological, physical, and situational cues that cause you to eat unnecessary food. This makes you fail at your diet and feel out of control. The key to feeling in control of your eating and weight is to become aware of your emotional triggers and learn strategies to manage your moods, feelings, and stressful situations. If you do not understand the reasons why you eat when you’re not hungry and learn how to effectively deal with these reasons, you will never be successful at maintaining weight loss.</p>
 			<p class="program_quote">“While weight loss programs tell you what to eat, they do not address the reasons why we eat when we’re not physically hungry.”</p>
