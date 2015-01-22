@@ -524,9 +524,15 @@ table {
           line-height: 24px;
           line-height: 2.4rem; } }
     .program_rap .program_right .program_quote {
-      font-family: 'Droid Serif', serif;
-      font-style: italic;
-      color: #777; }
+      font-family: 'Droid Sans', sans-serif;
+      color: #0053a5;
+      display: none; }
+      @media only screen and (max-width: 849px) {
+        .program_rap .program_right .program_quote {
+          display: block; } }
+      @media only screen and (max-width: 649px) {
+        .program_rap .program_right .program_quote {
+          display: block; } }
 
 .about_header {
   width: 100%;

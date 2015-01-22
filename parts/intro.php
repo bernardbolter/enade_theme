@@ -14,7 +14,7 @@
 		</div> <!-- intor_questions -->
 		<div class="intro_main">
 			<h4>Intro</h4>
-			<p>The Eating and Emotion Weight Management Program is designed to help you gain the self-awareness needed to recognize and manage your emotional eating triggers and change your eating behavior forever.</p>
+			<p>The Eating and Emotion Weight Management Program is designed to help you gain the self-awareness needed to identify and manage your emotional eating triggers and change your eating behavior forever.</p>
 			<p>Diets fail because they focus on changing what you eat and very little on how and why you decide what to eat. Not addressing the reasons behind your eating choices stands in your way of achieving permanent weight loss.</p>
 			<p>If you chronically struggle with your eating and weight and you are tired of yo-yo dieting, this program is for you!</p>
 		</div> <!-- intro_main -->

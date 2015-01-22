@@ -80,9 +80,17 @@
 		} // p
 
 		.program_quote {
-				font-family: $font-serif;
-				font-style: italic;
-				color: #777;
+				font-family: $font-sans;
+				color: $blue;
+				display: none;
+
+				@include respond-to(tab) {
+					display: block;
+				}
+
+				@include respond-to(mob) {
+					display: block;
+				}
 		} // program quote
 	} // program right
 } // program rap
